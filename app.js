@@ -152,7 +152,7 @@ const loadInitialPlayers = ()=>{
     .then((res) => res.json())
         .then((data) => {
             if (data && data.player) {
-                displayPlayerData(data.player.slice(0,12));
+                displayPlayerData(data.player.slice(0,10));
             } else {
                 displayNoResults();
             }
@@ -165,3 +165,4 @@ const loadInitialPlayers = ()=>{
 
 
 loadInitialPlayers()
+
