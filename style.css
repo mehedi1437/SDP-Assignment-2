@@ -1,0 +1,267 @@
+header{  
+    background-color: #2e3830;
+}
+main{
+    background-color: #B2FFFF;
+    padding-top: 20px;
+}
+.container-6{
+  height: 300px;
+  color: #888;
+  background-color: #171e36;
+}
+.container-nav{
+  background-color:  #e6dbc9;
+    border-radius: 15px;
+    border:4px solid orangered;
+   height: 75px;
+}
+.nav-logo{
+    width: 60px;
+    height: 60px;
+}
+.nav-btn{
+   background-color : 0DCAF0;
+   color: aqua;
+   border: none;
+   border-radius: 3px;
+}
+.nav-item{
+    font-weight: 500;
+}
+.logo{
+    background-color: #ffb766;
+    border-radius: 7px;
+}
+.logo img{
+    width: 80px;
+    border-radius: 50%;
+}
+.zoom {
+    transition: transform .2s; 
+}
+.zoom:hover {
+    transform: scale(1.5); 
+}
+.ext-box{
+    background-color: rgb(33, 37, 41);
+    width: 800px;
+    height: 80px;
+    border-radius: 50px;
+}
+.ext-box div h1{
+    color: rgb(103, 100, 118);
+}
+
+.fs-h6{
+    font-size: smaller;
+    text-wrap: wrap;
+    color: gray;
+}
+.fs-h6:hover{
+    color: rgba(248, 248, 255, 0.808);
+}
+.fs-p{
+    font-size: x-small;
+}
+.container-3{
+  display: flex;
+  width: 100vw;
+  margin: 20px;
+}
+.player-container{
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #c2edda;
+}
+.container-5{
+    position: relative;
+    top: -30px;
+}
+.player-img{
+  box-shadow: 4px 4px 8px 3px gray;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin: auto;
+}
+.playerCard{
+  font-size: small;
+  line-height: 25px;
+  box-shadow: 4px 4px 8px gray;
+  width: 300px;
+  height: 450px; 
+  padding: 10px;
+  padding-left: 20px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  text-wrap: wrap;
+  background-color: aliceblue;
+}
+#team{
+  box-shadow: 4px 4px 8px gray;
+  width: 250px;
+  height: 400px; 
+  padding: 10px;
+  padding-left: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-wrap: wrap;
+  background-color: #ffb766;
+  position: sticky;
+  top: 30px;
+  line-height: 10px;
+  font-size: x-small;
+  border-radius: 20px;
+}
+.team-info{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.team-container div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+  
+}
+.search-input{
+  width: 40vw;
+   height: 40px;
+   border: none;
+   border-radius: 10px;
+}
+.search-btn{
+  border: none;
+  width: 52px;
+  border-radius: 50%;
+  background-color: goldenrod;
+}
+.search-btn:hover{
+  color: aqua;
+  background-color: gray;
+}
+#player-details{
+  box-shadow: 4px 4px 8px gray;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+.details{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-img{
+  width: 100px;
+}
+
+
+
+/* Modal */
+* {box-sizing: border-box}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  margin-top:20px ;
+  width: 25%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+    width: 100%;
+  }
+}

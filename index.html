@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <!-- Nav Section -->
+        <section class="container-1 ">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container container-nav ">
+                    <a class="navbar-brand" href="#">
+                        <img class="nav-logo rounded-circle " src="images/logo.jpg" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item zoom">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Matches</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Players</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html" download class="nav-link btn btn-danger">Get It <i class="fa-solid fa-download"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <!-- Search Section -->
+        <section class="container-2">
+            <div class=" search-container d-flex justify-content-center align-item-center gap-2">
+                <input class="search-input ps-5" id="search-input" type="text" placeholder="Enter Player Name">
+                <button class="search-btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </section>
+        <!-- Players Section -->
+        <section class="container-3 " >
+            <div id="player-container" class="player-container">
+
+            </div>
+            <div class="players-right">
+
+                <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="/action_page.php">
+                    <div class="container">
+                        <div id="player-details">
+
+                        </div>
+                        <div class="clearfix d-flex justify-content-center">
+                            <button onclick="document.getElementById('id01').style.display='none'" type="button" class="cancelbtn">Cancel</button>
+                            <button onclick="document.getElementById('id01').style.display='none'" type="button" class="deletebtn">Delete</button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+
+                
+                <div id="team">
+                    <div class="team-container">
+                        <h4 >Total Member :<span id="count">0</span></h4>
+                        <hr>
+                        <div id="team-main-container" class="team-main-container">
+            
+                        </div>
+                        <hr>
+                        <h4>Total Male : <span id="total-male">0</span></h4>
+                        <h4>Total Female : <span id="total-female">0</span></h4>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Logo Section -->
+        <section class="container-4 pt-1">
+            <div class="logo container d-flex justify-content-evenly p-3 pb-5 ">
+                <img class="zoom" src="images/sitelogos1.png" alt="">
+                <img class="zoom" src="images/sitelogos2.png" alt="">
+                <img class="zoom" src="images/sitelogos3.png" alt="">          
+                <img class="zoom" src="images/sitelogos4.png" alt="">
+                <img class="zoom" src="images/sitelogos5.png" alt="">
+                <img class="zoom" src="images/sitelogos6.png" alt="">
+            </div>
+        </section>
+        <!-- Extra Section -->
+        <section class="container-5 ">
+            <div class="ext-box d-flex gap-5 align-items-center p-3 m-auto zoom">
+                <div class="d-flex align-items-center gap-1">
+                    <h1>01</h1> 
+                    <div>
+                        <h6 class="fs-h6 mt-3">Success is not Accident it's a Result of Hard Work</h6>
+                        <p class="fs-p text-danger fw-bolder">NFL LEAGUE</p>
+                    </div>               
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                    <h1 class="border-start border-light ps-4">02</h1> 
+                    <div>
+                        <h6 class="fs-h6 mt-3">Marit Lion: Player of the Month in December 2018</h6>
+                        <p class="fs-p text-danger fw-bolder">MBL PREMIERE LEAGUE</p>
+                    </div>               
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                    <h1 class="border-start border-light ps-4">03</h1> 
+                    <div>
+                        <h6 class="fs-h6 mt-3">The will to prepare to win that makes the difference</h6>
+                        <p class="fs-p text-danger fw-bolder">CAROLINA BALTIMORE</p>
+                    </div>               
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer Section -->
+        <section class="container-6">
+            <div class="container pt-5 d-flex justify-content-center gap-5 ">
+                <div class="d-flex flex-column">
+                    <img class="footer-img pb-3" src="images/footer.png" alt="">
+                    <small class="text-wrap pb-2">Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum facilisis sed non est ut mi metus semper.</small>
+                    <small><span class="text-danger"><i class="fa-solid fa-location-dot"></i></span> 4700 Millenia Blvd # 175, Orlando, FL 32839, USA</small>
+                    <small><span class="text-danger"><i class="fa-solid fa-phone-flip"></i></span> +1 321 2345 678-7</small>
+                    <small><span class="text-danger"><i class="fa-solid fa-envelope"></i></span> info@soccer.com</small>
+                </div>
+                <div class="d-flex flex-column">
+                    <h4>About Soccer</h4>
+                    <div class="d-flex gap-3">
+                        <div class="d-flex flex-column ">
+                            <small> Clubs</small>
+                            <small> Groups</small>
+                            <small> Statistics</small>
+                            <small> Tickets</small>
+                            <small> T-Shirts</small>
+                            
+                        </div>
+                        <div class="d-flex flex-column ">
+                            <small> Matches</small>
+                            <small> Teams</small>
+                            <small> Qualifiers</small>
+                            <small> Shoes</small>
+                            <small> Sports</small>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <img class="footer-img pb-3" src="images/footer.png" alt="">
+                    <small class="text-wrap pb-2">Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum facilisis sed non est ut mi metus semper.</small>
+                    <small><span class="text-danger"><i class="fa-solid fa-location-dot"></i></span> 4700 Millenia Blvd # 175, Orlando, FL 32839, USA</small>
+                    <small><span class="text-danger"><i class="fa-solid fa-phone-flip"></i></span> +1 321 2345 678-7</small>
+                    <small><span class="text-danger"><i class="fa-solid fa-envelope"></i></span> info@soccer.com</small>
+                </div>
+                <div class="d-flex flex-column">
+                    <h4>About Soccer</h4>
+                    <div class="d-flex gap-3">
+                        <div class="d-flex flex-column ">
+                            <small> Clubs</small>
+                            <small> Groups</small>
+                            <small> Statistics</small>
+                            <small> Tickets</small>
+                            <small> T-Shirts</small>
+                            
+                        </div>
+                        <div class="d-flex flex-column ">
+                            <small> Matches</small>
+                            <small> Teams</small>
+                            <small> Qualifiers</small>
+                            <small> Shoes</small>
+                            <small> Sports</small>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-evenly ">
+                <small>All Rights Reserved of Sports © 2020, Design & Developed By: <span class="danger">Asir</span></small>
+                <div class="d-flex justify-content-center gap-1">
+                    <small>HOME</small>
+                    <small>PLAYERS</small>
+                    <small>FIXTURES</small>
+                    <small>POINT TABLE</small>
+                    <small>TICKETS</small>
+                    <small>Contact</small>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="app.js">
+        var modal = document.getElementById('id01');
+
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
